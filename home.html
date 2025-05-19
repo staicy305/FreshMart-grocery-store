@@ -4,17 +4,253 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/9764e8e6c7.js" crossorigin="anonymous"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-     <div class="navbar">
-        <nav>
-            <a href="home.html">Home</a>
-            <a href="about.html">about</a>
-            <a href="services.html">services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-     </div>
-<!-- <img src="image4.jpg.jpg" alt="Grocery" width="1300" height="600"> -->
+        <header>
+            <div class="head">
+             <span>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4 mr-2" data-id="element-70"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                 <p>Open today: 8:00am -10:00pm</p>
+             </span>
+     
+             <span>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4 mr-2" data-id="element-73"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                 <p>+254741911802</p>
+             </span>
+            </div>
+           <nav class="navbar">
+                <div class="navbar-logo">Fresh Market</div>
+                <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contacts">Contact Us</a></li>
+                </ul>
+            </nav>
+             
+        </header>
 
-</body>
+        <div class="container" id="home">
+            <div class="intro-section">
+                <h1> Your Neighborhood  <br> Fresh Market</h1>
+                <p>Quality groceries, friendly service, and fresh local produce<br> in the heart of the city.</p>
+                <div class="intro-btn">
+                    <a href="about.html">
+                        <button >View Products</button>
+                    </a>
+                    <span><button >Find us</button></span>
+                </div>
+            </div>
+        </div>
+        <div class="why-header">
+            <h2>Why Shop With Us</h2>
+        </div>
+        <div class="why-shop-us">
+            <div class="column-1">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf h-8 w-8 text-green-600" data-id="element-278"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>
+                </span>
+                <h3>Fresh & Organic</h3>
+                <p>Quality produce sourced from local farms</p>
+            </div>
+    
+                <div class="column-2">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-8 w-8 text-green-600" data-id="element-283"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <h3>Local Sourcing</h3>
+                        <p>Supporting Local farmers and producers</p>
+                    </span>
+                </div>
+
+                <div class="column-3">
+            <span> 
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user h-8 w-8 text-green-600" data-id="element-288"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </span>
+            <h3>Expert staff</h3>
+            <p>Knowledgeable and friendly service</p>
+        </div>
+
+        <div class="column-4">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart h-8 w-8 text-green-600" data-id="element-293"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+            </span>
+            <h3>Quality Guaranteed</h3>
+            <p>100% satisfaction guaranteed</p>
+        </div>
+        </div>
+        
+        <div class="banner">
+            <h1>Fresh Deals Daily at GreenLeaf Grocery! <br> Shop Local. Eat Fresh.</h1>
+        </div>
+       
+        <section id="products">
+             <div class="banner-head">
+            <h2>Groceries</h2>
+            <p> Stock your pantry with the best — from farm-fresh produce to everyday essentials</p>
+        </div>
+            <div class="products">
+                <div class="product-card">
+                <img src="image6.jpg.jpg" alt="">
+                <h2>fresh vegitables</h2>
+                <p>organic and nutritious</p>
+            </div>
+
+            <div class="product-card">
+                <img src="image 1.jpg.jpg" alt="">
+                <h2>Fresh red chillies</h2>
+                <p>Bold ,spicy and packed with flavour which bring color and intense heat to any dish</p>
+            </div>
+
+            <div class="product-card">
+                <img src="image2.jpg.jpg" alt="">
+                <h2>Farm-Fresh Vegetables</h2>
+                <p>Straight from the field to your kitchen-colorfuland full of natural goodness</p>
+            </div>
+
+            <div class="product-card">
+                <img src="image3.jpg.jpg" alt="">
+                <h2>Fresh Fruits</h2>
+                <p>Juicy,sweet and naturally delicious-picked fresh to brighten your day.</p>
+            </div>
+
+            
+
+            <div class="product-card">
+                <img src="image5.jpg.jpg" alt="">
+                <h2>Classic Tomatoes</h2>
+                <p>Juicy,ripe, and full of flavour-Perfect for salads,sauces and sandwiches</p>
+            </div>
+
+            <div class="product-card">
+                <img src="image9.jpg.jpg" alt="">
+                <h2>Fresh carrots</h2>
+                <p>Grown naturally for pure,earthy flavour and rich nutrition-no chemicals</p>
+            </div>
+
+            <div class="product-card">
+                <img src="image7.jpg.jpg" alt="">
+                <h2>Fresh Market Grocery</h2>
+                <p>Step into a world of wholesome goodness with wide selection of fresh groceries</p>
+            </div>
+
+            
+            <div class="product-card">
+                <img src="image10.jpg" alt="">
+                <h2>Leafy Cabbages</h2>
+                <p>Very organic and nutritious</p>
+            </div>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <h1>Contact Us</h1>
+            <div class="contact-card">
+                <div class="column1">
+                    <h2>Store Information</h2>
+                    <div class="row1">
+                        <h3>Address</h3>
+                        <p>Kiambu next to Cleanshelf</p>
+                    </div>
+
+                    <div class="row2">
+                        <h3>Store Hours</h3>
+                        <p>Monday - Saturday: 8:00 AM - 9:00 PM
+                            <br>Sunday: 9:00 AM - 7:00 PM</p>
+                    </div>
+
+                    <div class="row3">
+                        <h3>Phone</h3>
+                        <p>+254741911802</p>
+                    </div>
+
+                    <div class="row4">
+                        <h3>Email</h3>
+                        <p>info@freshmart.com</p>
+                    </div>
+                    
+                </div>
+                <div class="column2">
+                    <h2>Send us a Message</h2>
+                    <form action="https://formspree.io/f/movdbdpp" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name">
+
+                        <label for="email">Email:</label>
+                        <input type="text" name="email">
+
+                        <label for="subject">Subject:</label>
+                        <input type="text" name="subject">
+
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="7" cols="50" placeholder="Type your message here..."></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+         <footer class="footer">
+            <!-- Banner Section -->
+            <div class="footer-banner">
+                <h2> Weekly Specials!!! </h2>
+                <p>Don’t miss out on fresh deals – up to 30% off on select produce!</p>
+                <a href="#products" class="banner-button">Shop Now</a>
+            </div>
+
+            <!-- Main Footer Content -->
+            <div class="footer-container">
+                <div class="footer-section">
+                <h4>Fresh Market Grocery</h4>
+                <p>Locally sourced, always fresh. Your go-to grocery destination.</p>
+                </div>
+                <div class="footer-section">
+                <div class="footer-section">
+                   <h5>Quick Links</h5>
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                </div>
+                <div class="footer-section">
+                <h5>Contact Us</h5>
+                <p>Email: info@freshmarket.com</p>
+                <p>Phone: +254741911802</p>
+                <p>Kiambu next to Cleanshelf</p>
+                </div>
+
+                <div class="footer-section">
+                <h5>Social Media</h5>
+                <i class="fa-brands fa-instagram fa-flip"></i>
+                <i class="fa-brands fa-facebook fa-flip"></i>
+                <i class="fa-brands fa-x-twitter fa-flip"></i>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fresh Market Grocery. All rights reserved.</p>
+            </div>
+         </footer>
+            
+         <script>
+                function toggleMenu() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.toggle('active');
+                }
+         </script>
+
+
+        </body>
 </html>
+      

@@ -261,7 +261,7 @@
   height: 450px;
   width: 290px;
   border: 1px solid #ccc;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .product-card img{
@@ -284,7 +284,6 @@
 .product-card:hover{
   cursor: pointer;
   opacity: 0.7;transition: all 0.3s ease-out;
-  transform: scale(1.05) translateY(-5px);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 
 }
@@ -363,13 +362,69 @@ form{
   flex-direction: column;
   color: #6c6c6c; 
 }
+#store-section h1{
+  font-size: xx-large;
+  color: #00001a;
+  text-align: center;
+  padding: 40px;
+}
+   .store-section {
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      max-width: 1000px;
+      margin: 40px auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      padding-bottom: 40px;
+    }
+
+    .map {
+      flex: 1 1 50%;
+      min-height: 300px;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .store-info {
+      flex: 1 1 50%;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .store-info h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .store-info p {
+      margin: 10px 0;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .store-section {
+        flex-direction: column;
+      }
+      .map, .store-info {
+        flex: 1 1 100%;
+      }
+    }
 
 
 .footer {
   margin-top: 20px;
   width: 100%;
-  background-color: #2e7d32;
-  color: #fff;
+  background-color: #00001a;
+  color: #989696;
   font-family: sans-serif;
 }
 
@@ -422,7 +477,7 @@ form{
 
 .footer-section h4,
 .footer-section h5 {
-  color: #c8e6c9;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -436,7 +491,7 @@ form{
 }
 
 .footer-section ul li a {
-  color: #ffffff;
+  color: #c2baba;
   text-decoration: none;
 }
 
@@ -445,12 +500,14 @@ form{
 }
 
 .footer-bottom {
+  color: #fff;
   text-align: center;
   padding: 20px;
   border-top: 1px solid #66bb6a;
   font-size: 14px;
 }
 .footer-section i{
+  color: #fff;
   font-size: 20px;
   gap: 10px;
   margin-left: 2px;
@@ -458,5 +515,6 @@ form{
   margin: 10px;
 }
 .footer-section i:hover{
-  color:#00001a;
+  cursor: pointer;
+  color:#c9c9c9;
 }
